@@ -1,0 +1,33 @@
+import subprocess
+import dynalysis.classes as clss
+from dynalysis.gen_conf import exec_conf
+from dynalysis.gen_pro import exec_pro
+from dynalysis.visualization import subplot, edplot
+import numpy as np
+import matplotlib.pyplot as plt
+
+ID = 3579 #4095 3513, 3579
+
+ed_conf={'exc_1':{'GABA':['GABA','20','-90','0','0','0']},\
+        'exc_2':{'GABA':['GABA','20','-90','0','0','0']},\
+        'inh_1':{'AMPA':['AMPA','2','0','0','10.5','1']},\
+        'inh_2':{'AMPA':['AMPA','2','0','0','10.5','1']}}
+
+ebias = 1
+ed_pro={(1,'exc_1'):['ramp', ebias, 0],\
+    (1,'exc_2'):['ramp', ebias, 0],\
+    (1,'inh_1'):['ramp', 0.5, 0],\
+    (100,'exc_1'):['pulse_b',10, 2, 0,ebias],\
+    (100,'inh_1'):['pulse_b',100, 2, 0,0.5],\
+    (1,'inh_2'):['ramp', .5, 0]}
+
+
+exec_conf([90,120,12,45], ID=ID,\
+          event_dic=ed_conf)
+exec_pro(ID=ID, trial_t = 1000, output_Spike=False,
+         event_dic=ed_pro, output_MemPot=True, baseline=False)
+
+subprocess.Popen("./flysim07_21_2.out -conf network.conf -pro network.pro -nmodel LIF -dt 0.01", shell = True).wait()
+
+edplot(ed_pro)
+subplot(fname='MemPot.dat')

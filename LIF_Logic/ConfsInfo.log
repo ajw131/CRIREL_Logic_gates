@@ -1,0 +1,74 @@
+configuration information:----------------------------------------
+population:0
+NeuPopuName:inp1, N=1 Taum=20 Vth=-50 El=-70 g=2.5e-09 Cm=0.5 Vreset=-55
+Vrsting_ca=0 Alpha_ca=0 Tau_ca=0 Eff_ca=0 STDeP=0 STDeTau=0
+ pv=0.6 tD=300 aF=0.0035 tF=7000 aCap=250 tCap=2 aCar=0.1 tCar=2000
+NeuRepName:AMPA, Tau=2 Vrv=0 FExt=0 MnExtEff=0 MnExtCon=0
+NeuRepName:GABA, Tau=5 Vrv=-90 FExt=0 MnExtEff=0 MnExtCon=0
+
+TarPopuName:e1 TarReceptor:AMPA, Connectivity=1 MeanEff=45 weight=1
+TarPopuName:i1 TarReceptor:AMPA, Connectivity=1 MeanEff=45 weight=1
+------------------------------------------------------------------
+population:1
+NeuPopuName:inp2, N=1 Taum=20 Vth=-50 El=-70 g=2.5e-09 Cm=0.5 Vreset=-55
+Vrsting_ca=0 Alpha_ca=0 Tau_ca=0 Eff_ca=0 STDeP=0 STDeTau=0
+ pv=0.6 tD=300 aF=0.0035 tF=7000 aCap=250 tCap=2 aCar=0.1 tCar=2000
+NeuRepName:AMPA, Tau=2 Vrv=0 FExt=0 MnExtEff=0 MnExtCon=0
+NeuRepName:GABA, Tau=5 Vrv=-90 FExt=0 MnExtEff=0 MnExtCon=0
+
+TarPopuName:e2 TarReceptor:AMPA, Connectivity=1 MeanEff=45 weight=1
+TarPopuName:i2 TarReceptor:AMPA, Connectivity=1 MeanEff=45 weight=1
+------------------------------------------------------------------
+population:2
+NeuPopuName:e1, N=1 Taum=20 Vth=-50 El=-70 g=2.5e-09 Cm=0.5 Vreset=-55
+Vrsting_ca=0 Alpha_ca=0 Tau_ca=0 Eff_ca=0 STDeP=0 STDeTau=0
+ pv=0.6 tD=300 aF=0.0035 tF=7000 aCap=250 tCap=2 aCar=0.1 tCar=2000
+NeuRepName:AMPA, Tau=2 Vrv=0 FExt=0 MnExtEff=0 MnExtCon=0
+NeuRepName:GABA, Tau=5 Vrv=-90 FExt=0 MnExtEff=0 MnExtCon=0
+
+TarPopuName:eo TarReceptor:AMPA, Connectivity=1 MeanEff=50 weight=1
+------------------------------------------------------------------
+population:3
+NeuPopuName:e2, N=1 Taum=20 Vth=-50 El=-70 g=2.5e-09 Cm=0.5 Vreset=-55
+Vrsting_ca=0 Alpha_ca=0 Tau_ca=0 Eff_ca=0 STDeP=0 STDeTau=0
+ pv=0.6 tD=300 aF=0.0035 tF=7000 aCap=250 tCap=2 aCar=0.1 tCar=2000
+NeuRepName:AMPA, Tau=2 Vrv=0 FExt=0 MnExtEff=0 MnExtCon=0
+NeuRepName:GABA, Tau=5 Vrv=-90 FExt=0 MnExtEff=0 MnExtCon=0
+
+TarPopuName:eo TarReceptor:AMPA, Connectivity=1 MeanEff=50 weight=1
+------------------------------------------------------------------
+population:4
+NeuPopuName:i1, N=1 Taum=20 Vth=-50 El=-70 g=2.5e-09 Cm=0.5 Vreset=-55
+Vrsting_ca=0 Alpha_ca=0 Tau_ca=0 Eff_ca=0 STDeP=0 STDeTau=0
+ pv=0.6 tD=300 aF=0.0035 tF=7000 aCap=250 tCap=2 aCar=0.1 tCar=2000
+NeuRepName:AMPA, Tau=2 Vrv=0 FExt=0 MnExtEff=0 MnExtCon=0
+NeuRepName:GABA, Tau=5 Vrv=-90 FExt=0 MnExtEff=0 MnExtCon=0
+
+TarPopuName:e1 TarReceptor:AMPA, Connectivity=1 MeanEff=30 weight=1
+TarPopuName:e2 TarReceptor:GABA, Connectivity=1 MeanEff=54 weight=1
+------------------------------------------------------------------
+population:5
+NeuPopuName:i2, N=1 Taum=20 Vth=-50 El=-70 g=2.5e-09 Cm=0.5 Vreset=-55
+Vrsting_ca=0 Alpha_ca=0 Tau_ca=0 Eff_ca=0 STDeP=0 STDeTau=0
+ pv=0.6 tD=300 aF=0.0035 tF=7000 aCap=250 tCap=2 aCar=0.1 tCar=2000
+NeuRepName:AMPA, Tau=2 Vrv=0 FExt=0 MnExtEff=0 MnExtCon=0
+NeuRepName:GABA, Tau=5 Vrv=-90 FExt=0 MnExtEff=0 MnExtCon=0
+
+TarPopuName:e1 TarReceptor:GABA, Connectivity=1 MeanEff=54 weight=1
+TarPopuName:e2 TarReceptor:AMPA, Connectivity=1 MeanEff=30 weight=1
+------------------------------------------------------------------
+population:6
+NeuPopuName:eo, N=1 Taum=20 Vth=-50 El=-70 g=2.5e-09 Cm=0.5 Vreset=-55
+Vrsting_ca=0 Alpha_ca=0 Tau_ca=0 Eff_ca=0 STDeP=0 STDeTau=0
+ pv=0.6 tD=300 aF=0.0035 tF=7000 aCap=250 tCap=2 aCar=0.1 tCar=2000
+NeuRepName:AMPA, Tau=2 Vrv=0 FExt=0 MnExtEff=0 MnExtCon=0
+NeuRepName:GABA, Tau=5 Vrv=-90 FExt=0 MnExtEff=0 MnExtCon=0
+
+------------------------------------------------------------------
+population:7
+NeuPopuName:buffer, N=1 Taum=20 Vth=-50 El=-70 g=2.5e-09 Cm=0.5 Vreset=-50.1
+Vrsting_ca=0 Alpha_ca=0 Tau_ca=0 Eff_ca=0 STDeP=0 STDeTau=0
+ pv=0.6 tD=300 aF=0.0035 tF=7000 aCap=250 tCap=2 aCar=0.1 tCar=2000
+NeuRepName:AMPA, Tau=20 Vrv=0 FExt=0 MnExtEff=0 MnExtCon=0
+
+------------------------------------------------------------------
